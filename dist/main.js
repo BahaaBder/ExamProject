@@ -8,6 +8,6 @@ const search = function() {
 }
 
 $("body").on("click", ".image", function() {
-    alert($(this).closest("div").find("ul").find("li"))
+    alert($(this).parent().children("ul").children("li").first().text())
 
 })
