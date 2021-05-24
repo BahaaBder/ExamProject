@@ -22,7 +22,7 @@ app.get('/recipes/:ingredient', function(request, response) {
                 title: r.title,
                 thumbnail: r.thumbnail,
                 ingredients: r.ingredients,
-                href: r.ingredients.href
+                href: r.href
             })
         }
         response.send(recipes)
@@ -39,6 +39,7 @@ app.get('/recipes/:ingredient', function(request, response) {
 app.get('/sanity', function(request, response) {
     response.send("OK")
 })
+
 
 
 
