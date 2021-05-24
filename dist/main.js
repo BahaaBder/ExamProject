@@ -6,3 +6,7 @@ const search = function() {
         renderRecipes.renderData(recipes)
     })
 }
+
+$("img").on("click", ".image", function() {
+    alert($(this).closest("div").find("ul").find("li"))
+})
